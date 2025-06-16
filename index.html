@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>SMS Opt-In Policy</title>
   <style>
     body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: #000;
     }
 
-    .header {
-      background-color: #003366;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 20px 30px;
-    }
-
-    .header img {
+    img.logo {
       height: 50px;
-      margin-right: 20px;
+      margin-bottom: 20px;
     }
 
-    .header h1 {
+    h1 {
       font-size: 2rem;
-      margin: 0;
+      margin-bottom: 20px;
     }
 
     .date {
       text-align: right;
-      margin: 15px 30px 0 0;
+      margin-bottom: 30px;
       font-size: 0.9rem;
       color: #333;
     }
 
-    .content {
-      padding: 30px;
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
     }
 
-    .content p {
-      line-height: 1.6;
+    input[type="text"] {
+      padding: 8px;
+      width: 250px;
       font-size: 1rem;
+    }
+
+    .checkbox-label {
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      margin-top: 5px;
+    }
+
+    .checkbox-label label {
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <img src="https://yourdomain.com/logo.png" alt="Company Logo">
-    <h1>SMS Opt-In Policy</h1>
-  </div>
+  <img src="https://www.massgeneralbrigham.org/-/media/mgb/patients/logo.png" alt="Mass General Brigham Logo" class="logo">
+
+  <h1>SMS Opt-In Policy</h1>
 
   <div class="date">June 11, 2025</div>
 
-  <div class="content">
-    <p>Users opt in to receive text messages by checking a box during registration or by texting a keyword to our service.</p>
-    <p>We send important service notifications only. Message frequency varies. Message and data rates may apply.</p>
-    <p>Reply STOP to unsubscribe at any time. For help, reply HELP.</p>
-  </div>
+  <form>
+    <label for="phone">Mobile Number:</label>
+    <input type="text" id="phone" name="phone" placeholder="(123) 456-7890" />
+
+    <div class="checkbox-label">
+      <input type="checkbox" id="optin" name="optin" required />
+      <label for="optin">
+        By checking this box, I agree to receive SMS alerts from <strong>Mass General Brigham</strong>. Message frequency varies. Message and data rates may apply. Text STOP to opt out or HELP for help.
+      </label>
+    </div>
+
+    <button type="submit">Subscribe</button>
+  </form>
 
 </body>
 </html>
+

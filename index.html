@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SMS Opt-In Policy</title>
+  <title>SMS Opt-In – Mass General Brigham</title>
 </head>
 <body>
-  <h1>SMS Opt-In Policy</h1>
-  <p>Users opt in to receive text messages by checking a box during registration or by texting a keyword to our service.</p>
-  <p>We send important service notifications only. Message frequency varies. Message and data rates may apply.</p>
-  <p>Reply STOP to unsubscribe at any time.</p>
+  <img src="b3badd57-aff6-41ce-8df6-00ca7a35d87b.png" alt="Mass General Brigham Logo" width="200">
+  <h1>Sign Up for Text Alerts</h1>
+
+  <form>
+    <label for="phone">Mobile Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">
+      I agree to receive SMS alerts from <strong>Mass General Brigham</strong>. Message frequency varies. Message and data rates may apply. Text STOP to opt out or HELP for help.
+    </label><br><br>
+
+    <button type="submit">Subscribe</button>
+  </form>
 </body>
 </html>

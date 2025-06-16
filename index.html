@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SMS Opt-In – Mass General Brigham</title>
+  <meta charset="UTF-8" />
+  <title>SMS Opt-In Policy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .header {
+      background-color: #003366;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+    }
+
+    .header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .date {
+      text-align: right;
+      margin: 15px 30px 0 0;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .content p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <img src="b3badd57-aff6-41ce-8df6-00ca7a35d87b.png" alt="Mass General Brigham Logo" width="200">
-  <h1>Sign Up for Text Alerts</h1>
 
-  <form>
-    <label for="phone">Mobile Number:</label><br>
-    <input type="tel" id="phone" name="phone" required><br><br>
+  <div class="header">
+    <img src="https://yourdomain.com/logo.png" alt="Company Logo">
+    <h1>SMS Opt-In Policy</h1>
+  </div>
 
-    <input type="checkbox" id="consent" name="consent" required>
-    <label for="consent">
-      I agree to receive SMS alerts from <strong>Mass General Brigham</strong>. Message frequency varies. Message and data rates may apply. Text STOP to opt out or HELP for help.
-    </label><br><br>
+  <div class="date">June 11, 2025</div>
 
-    <button type="submit">Subscribe</button>
-  </form>
+  <div class="content">
+    <p>Users opt in to receive text messages by checking a box during registration or by texting a keyword to our service.</p>
+    <p>We send important service notifications only. Message frequency varies. Message and data rates may apply.</p>
+    <p>Reply STOP to unsubscribe at any time. For help, reply HELP.</p>
+  </div>
+
 </body>
 </html>
